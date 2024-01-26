@@ -1,3 +1,41 @@
 /* CSS del header */
 
-.header {}
+.header {
+    position: fixed;
+    background-color: green;
+    z-index: 10;
+    position: sticky;
+    top: 0;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.header .header__image {
+    width: 50px;
+    max-width: 50px;
+}
+
+.header .header__image img {
+    width: 100%;
+}
+
+.header .header__nav .header__nav__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 10px;
+}
+
+.header .header__nav .header__nav__list .header__nav__list_item a {
+    text-decoration: none;
+}
+
+@media (width > 768px) {
+    .header__nav .header__nav__list .header__nav__list__item.hidden { /* El .hidden se pone junto por que esta dentro del header_nav_list_item */
+        display: block;
+    }
+}

@@ -1,1 +1,24 @@
 /* Aqui añadiremos los componentes como botones ... */
+
+.btn {
+    color: #000; /* Color texto del root */
+    background-color: #fff; /* Color de fondo */
+    padding: 0.8rem;
+    display: inline-block;
+    /* border: 2px solid white; Poner bordes de otro color */
+    border-radius: 5px; /* Redondear bordes */
+    border: none; /* Quitar bordes. El border radius que son las curbas aunque pongamos esto sigue funcioanando */
+    box-shadow: none; /* Quitar sombras */
+    cursor: pointer; /* Para que al pasar por encima del boton aparezca el dedo */
+    border: 1px solid #000; /* Ponemos esto para que se queden a la misma altura ya que le estamos poniendo borde */
+    /* transition-property: background-color; / Esto es a lo que afecta
+    transition-duration: 2s; /* Tiempo de la transiccion */
+    transition: background-color 2s, color 10s; /* Normalmente lo vamos a encontrar asi y no como esta arriba */
+}
+
+.hidden {
+    display: none; /* Esta clase sirve para ocultar cualquier cosa que le pongamos como class hiden */
+    /* visibility: hidden; */
+    /* La diferencia entre display y visibility es que display no se va a ver nada de nada
+    mientras que visibility se va a ver el hueco vacio */
+}
