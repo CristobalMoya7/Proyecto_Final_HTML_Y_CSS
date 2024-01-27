@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="styles/banner.css">
     <link rel="stylesheet" href="styles/info.css">
     <link rel="stylesheet" href="styles/singup.css">
+    <link rel="stylesheet" href="styles/skills.css">
 </head>
 <body>
     <header class="header">
@@ -32,11 +33,40 @@
         </nav>
     </header>
     <main>
-        <section class="banner">
-            <div class="banner__image">
-                <a class="banner__button" href="AUN NO">PORTAFOLIO</a>
+        <section class="about-section">
+            <h2>Mi Descripción</h2>
+            <p>Aquí puedes poner una descripción sobre ti.</p>
+        
+            <h2>Mis Habilidades</h2>
+            <div class="skills-container">
+              <div class="skill">
+                <p>Git</p>
+                <div class="progress-bar" style="--percent: 90;"></div>
+              </div>
+              <div class="skill">
+                <p>Python</p>
+                <div class="progress-bar" style="--percent: 80;"></div>
+              </div>
+              <div class="skill">
+                <p>JavaScript</p>
+                <div class="progress-bar" style="--percent: 70;"></div>
+              </div>
+              <div class="skill">
+                <p>HTML</p>
+                <div class="progress-bar" style="--percent: 90;"></div>
+              </div>
+              <div class="skill">
+                <p>SQL</p>
+                <div class="progress-bar" style="--percent: 60;"></div>
+              </div>
+              <div class="skill">
+                <p>CSS</p>
+                <div class="progress-bar" style="--percent: 50;"></div>
+              </div>
             </div>
-        </section>
+          </section>
+        
+        
         <section class="info">
             <div class="info__text">
                 <h1>
@@ -52,56 +82,67 @@
                 </p>
             </div>
         </section>
-        <section class="singup">
-            <form method="post" action="">
-                <div class="singup__elemt">
-                    <label class="singup__label" for="name">Nombre</label>
-                    <input class="singup__input" name="name" id="name" type="text" placeholder="Añade tu nombre" required>
+        <section class="banner">
+            <div class="banner__image">
+                <a class="banner__button" href="AUN NO">PORTAFOLIO</a>
+            </div>
+        </section>
+        <div class="card">
+            <form method="" action="">
+
+                <div class="form__element">
+                    <label class="form__label" for="name">Nombre</label>
+                    <input class="form__input" name="name" id="name" type="text" placeholder="Añade tu nombre" required>
                 </div>
 
-                <div class="signup__element">
-                    <label class="singup__label" for="surname">Apellidos</label>
-                    <input class="singup__input" name="surname" id="surname" type="text" placeholder="Añade tus apellidos" required>
+                <div class="form__element">
+                    <label class="form__label" for="surname">Apellidos</label>
+                    <input class="form__input" name="surname" id="surname" type="text" placeholder="Añade tus apellidos" required>
                 </div>
 
-                <div class="signup__element">
-                    <label class="singup__label" for="phone">Telefono</label>
-                    <input class="singup__input" name="phone" id="phone" type="tel" placeholder="Añade tu telefono" title="000-00-00-00" required>
+                <div class="form__element">
+                    <label class="form__label" for="phone">Numero de telefono</label>
+                    <input class="form__input" type="tel" id="phone" name="phone" required placeholder="000-00-00-00" title="000-00-00-00"> 
                 </div>
-
-                <fieldset class="signup__element" required>
-                    <legend>¿Cómo me conociste?</legend>
-                    <div class="singup__element__answer">
+                
+                <fieldset class="form__element">
+                    <legend>¿Como me conociste?</legend>
+                    <div class="form__element__radio__list">
                         <label for="university">Universidad</label>
-                        <input type="radio" id="university" name="university" value="university" checked>
+                        <input type="radio" id="university" name="Acquaintances" value="university" checked>
                         <label for="keepcoding">Keepcoding kick-off</label>
-                        <input type="radio" id="keepcoding" name="keepcoding" value="keepcoding" checked>
+                        <input type="radio" id="keepcoding" name="Acquaintances" value="keepcoding">
                         <label for="school">Colegio</label>
-                        <input type="radio" id="school" name="school" value="school" checked>
+                        <input type="radio" id="school" name="Acquaintances" value="school">
                         <label for="github">Github</label>
-                        <input type="radio" id="github" name="github" value="github" checked>
+                        <input type="radio" id="github" name="Acquaintances" value="github">
                     </div>
                 </fieldset>
                 
-                <div class="signup__element">
-                    <label class="singup__label" for="username">Nombre de usuario</label>
-                    <input class="singup__input" name="username" id="username" type="text" pattern="^@[^\s]+" title="Por favor, ingresa un nombre de usuario que comience con @" placeholder="Añade tu nombre de usuario">>
-                </div>   
-
-                <div class="signup__element">
-                    <label class="signup__label" for="bio">Más información</label>
-                    <textarea class="singup__input" name="bio" id="bio" cols="30" rows="10" placeholder="Añade tu biografía" maxlength="180" required></textarea>
-                    <span class="singup__info">Mensaje con más información del usuario (Texto máximo 180 caracteres)</span>
+                <div class="form__element">
+                    <label class="form__label" for="username">Nombre de usuario</label>
+                    <input class="form__input" name="username" id="username" type="text" pattern="^@[^\s]+" title="Por favor, ingresa un nombre de usuario que comience con @" placeholder="Nombre de usuario ^@[^\s]+" required>
                 </div>
                 
 
-                <div class="singup__element singup__element--checkbox">
-                    <label class="singup__label" for="newsletter">Suscribete a mi newsletter</label>
+                <div class="form__element">
+                    <label class="form__label" for="bio">Más información del usuario</label>
+                    <textarea class="form__input" name="bio" id="bio" cols="30" rows="10" placeholder="Añade tu biografía" maxlength="180" required></textarea>
+                    <span class="form__info">Mensaje con más información del usuario (Texto máximo 180 caracteres)</span>
+                </div>
+                
+    
+                <div class="form__element form__element--checkbox">
+                    <label class="form__label" for="newsletter">Suscribete a mi newsletter</label>
                     <input type="checkbox" name="newsletter" id="newsletter" value="selected">
                 </div>
-
+    
+                <div>
+                    <input class="btn btn--secondary" type="reset" value="Resetear">
+                    <input class="btn" type="submit" value="Guardar">
+                </div>
             </form>
-        </section>
+        </div>
     </main>
     <footer class="footer">
         <p>Sígueme en redes sociales:</p>

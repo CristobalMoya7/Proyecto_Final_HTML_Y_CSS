@@ -1,43 +1,43 @@
-/* Ajustes para separar y alinear hacia abajo */
-.singup {
+
+
+.card {
+    padding: 40px 20px 50px 20px;
     margin: 0 auto;
     max-width: 320px;
-    background-size: 250px;
-    padding: 20px; /* Ajusta el espacio interno */
 }
 
-.singup__element {
+.form__element {
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px; /* Aumenta el margen inferior para mayor separación entre elementos */
+    margin-bottom: 12px;
 }
 
-.singup__label {
-    margin-bottom: 8px; /* Disminuye el margen inferior de las etiquetas */
+.form__label {
+    margin-bottom: 10px;
     font-size: 1.2rem;
 }
 
-.singup__input {
+.form__input {
     border-radius: 5px;
-    padding: 14px 50px; /* Reduce el espacio interior del input */
+    padding: 16px 12px;
 }
 
-.singup__element.singup__element--checkbox {
-    flex-direction: column; /* Cambia la dirección a columna */
-    align-items: flex-start; /* Alinea los elementos a la izquierda */
+.form__element.form__element--checkbox {
+    flex-direction: row;
+    align-items: center;
 }
 
-.singup__element.singup__element--checkbox .singup__label {
-    margin: 8px 0; /* Ajusta el margen superior e inferior de las etiquetas */
+.form__element.form__element--checkbox .form__label {
+    margin: 0;
 }
 
-.singup__element.singup__element--checkbox input[type="checkbox"] {
-    margin: 8px 0; /* Ajusta el margen superior e inferior del checkbox */
+.form__element.form__element--checkbox input[type="checkbox"] { 
+    margin: 10px;
 }
 
-.singup__element__answer {
+.form__element__radio__list { 
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 8px; /* Ajusta el espacio entre elementos */
+    gap: 10px;
 }

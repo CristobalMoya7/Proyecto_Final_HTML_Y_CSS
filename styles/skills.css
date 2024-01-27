@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.about-section {
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.progress-bar {
+    width: 100%;
+    max-width: 400px;
+    height: 20px;
+    background-color: #eee;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    margin: 10px auto; 
+    padding: 0 10px; 
+}
+
+.progress-bar::before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 100%;
+    background-color: #4CAF50;
+    border-radius: 10px;
+    animation: progressAnimation 2s forwards;
+    transition: background-color 0.5s ease;
+}
+
+@keyframes progressAnimation {
+    to {
+        width: calc(var(--percent) * 1%);
+    }
+}
+
+@media (min-width: 768px) {
+    .skill {
+        width: calc(50% - 20px);
+        margin-bottom: 20px;
+    }
+}
