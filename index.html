@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/banner.css">
     <link rel="stylesheet" href="styles/info.css">
+    <link rel="stylesheet" href="styles/singup.css">
 </head>
 <body>
     <header class="header">
@@ -50,6 +51,56 @@
                     ¡A rodar juntos por la vida y persiguiendo mis sueños! 🏍️💻✨  
                 </p>
             </div>
+        </section>
+        <section class="singup">
+            <form method="post" action="">
+                <div class="singup__elemt">
+                    <label class="singup__label" for="name">Nombre</label>
+                    <input class="singup__input" name="name" id="name" type="text" placeholder="Añade tu nombre" required>
+                </div>
+
+                <div class="signup__element">
+                    <label class="singup__label" for="surname">Apellidos</label>
+                    <input class="singup__input" name="surname" id="surname" type="text" placeholder="Añade tus apellidos" required>
+                </div>
+
+                <div class="signup__element">
+                    <label class="singup__label" for="phone">Telefono</label>
+                    <input class="singup__input" name="phone" id="phone" type="tel" placeholder="Añade tu telefono" title="000-00-00-00" required>
+                </div>
+
+                <fieldset class="signup__element" required>
+                    <legend>¿Cómo me conociste?</legend>
+                    <div class="singup__element__answer">
+                        <label for="university">Universidad</label>
+                        <input type="radio" id="university" name="university" value="university" checked>
+                        <label for="keepcoding">Keepcoding kick-off</label>
+                        <input type="radio" id="keepcoding" name="keepcoding" value="keepcoding" checked>
+                        <label for="school">Colegio</label>
+                        <input type="radio" id="school" name="school" value="school" checked>
+                        <label for="github">Github</label>
+                        <input type="radio" id="github" name="github" value="github" checked>
+                    </div>
+                </fieldset>
+                
+                <div class="signup__element">
+                    <label class="singup__label" for="username">Nombre de usuario</label>
+                    <input class="singup__input" name="username" id="username" type="text" pattern="^@[^\s]+" title="Por favor, ingresa un nombre de usuario que comience con @" placeholder="Añade tu nombre de usuario">>
+                </div>   
+
+                <div class="signup__element">
+                    <label class="signup__label" for="bio">Más información</label>
+                    <textarea class="singup__input" name="bio" id="bio" cols="30" rows="10" placeholder="Añade tu biografía" maxlength="180" required></textarea>
+                    <span class="singup__info">Mensaje con más información del usuario (Texto máximo 180 caracteres)</span>
+                </div>
+                
+
+                <div class="singup__element singup__element--checkbox">
+                    <label class="singup__label" for="newsletter">Suscribete a mi newsletter</label>
+                    <input type="checkbox" name="newsletter" id="newsletter" value="selected">
+                </div>
+
+            </form>
         </section>
     </main>
     <footer class="footer">
