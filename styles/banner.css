@@ -1,6 +1,6 @@
 .banner {
     height: 75vh;
-    width: 100%; /* Asegura que el banner ocupe el 100% del ancho */
+    width: 100%;
     position: relative;
 }
 
