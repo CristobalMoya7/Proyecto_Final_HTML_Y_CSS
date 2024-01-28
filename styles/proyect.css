@@ -31,15 +31,15 @@ body {
 
 @media screen and (min-width: 768px) {
   #video {
-    max-width: 100%; /* Evita que el video se amplíe más allá de su tamaño original */
-    max-height: 80%; /* Mantiene la proporción original del video */
+    max-width: 100%;
+    max-height: 80%;
   }
 }
 
 .projects-container {
   max-width: 1200px;
-  margin: 0 auto; /* Alineación al centro */
-  padding: 20px; /* Añadido padding para separar del borde de la pantalla */
+  margin: 0 auto;
+  padding: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -55,7 +55,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .project {
-    width: calc(50% - 20px); /* Cambiado a 50% para mostrar de 2 en 2 */
+    width: calc(50% - 20px);
     margin-right: 20px;
   }
 

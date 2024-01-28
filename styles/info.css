@@ -1,8 +1,8 @@
 
 .info {
     width: 90%;
-    margin: 0 auto; /* Esto le va a poner un lado y a otro siempre que haya width (ancho). Dejara el 90% de ancho en el centro y añadira los lados para centrarlo*/
-    max-width: 768px; /* Maximo de ancho por si la pantalla es muy larga, asi no se alargara mucho */
+    margin: 0 auto;
+    max-width: 768px;
 
 }
 
