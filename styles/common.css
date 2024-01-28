@@ -1,3 +1,13 @@
 .root {
-    --green-color: #fff
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+}
+
+.main-bg {
+    background-color: #FFF;
+    color: #000;
+}
+
+html {
+    scroll-behavior: smooth;
 }

@@ -8,8 +8,11 @@
 
 .info .info__text {
     text-align: center;
+    font-size: 25px;
 }
 
 .info .info__text p {
     font-size: 24px;
 }
+
+

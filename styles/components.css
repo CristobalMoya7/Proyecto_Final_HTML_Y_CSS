@@ -1,5 +1,6 @@
-/* Aqui añadiremos los componentes como botones ... */
+/* Resto de tu código CSS ... */
 
+/* Estilos básicos del botón */
 .btn {
     color: #000;
     background-color: #fff;
@@ -10,9 +11,16 @@
     box-shadow: none;
     cursor: pointer;
     border: 1px solid #000;
-    transition: background-color 2s, color 10s;
+    transition: background-color 2s, color 10s, transform 0.3s; /* Agregamos transform a la transición */
+}
+
+/* Efecto de vibración al pasar el ratón */
+.btn:hover {
+    transform: translateX(-2px) translateY(-2px);
 }
 
 .hidden {
     display: none;
 }
+
+/* Resto de tu código CSS ... */

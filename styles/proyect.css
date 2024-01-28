@@ -29,6 +29,13 @@ body {
   border: none;
 }
 
+@media screen and (min-width: 768px) {
+  #video {
+    max-width: 100%; /* Evita que el video se amplíe más allá de su tamaño original */
+    max-height: 80%; /* Mantiene la proporción original del video */
+  }
+}
+
 .projects-container {
   max-width: 1200px;
   margin: 0 auto; /* Alineación al centro */
@@ -60,9 +67,9 @@ body {
 img {
   max-width: 100%;
   height: auto;
-  max-height: 200px; /* Ajusta la altura máxima según tus necesidades */
-  object-fit: cover; /* Ajusta el tamaño de la imagen sin distorsionar */
-  object-position: center; /* Centra verticalmente la imagen */
+  max-height: 200px;
+  object-fit: cover;
+  object-position: center;
 }
 
 .project-text {

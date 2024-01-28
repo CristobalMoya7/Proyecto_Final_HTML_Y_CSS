@@ -1,9 +1,8 @@
 .banner {
-    height: 75dvh;
+    height: 75vh;
+    width: 100%; /* Asegura que el banner ocupe el 100% del ancho */
     position: relative;
 }
-
-
 
 .banner__image {
     position: absolute;
@@ -11,10 +10,17 @@
     top: 0;
     bottom: 0;
     right: 0;
-    background-image: url();
-    background-size: cover;
+    background-image: url(../assets/img/Main.jpeg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
     height: auto;
+}
 
+@media (min-width: 768px) {
+    .banner__image {
+        background-image: url(../assets/img/Coche.jpeg);
+    }
 }
 
 .banner .banner__button {
